@@ -9,9 +9,7 @@ profile:
   image: profile.jpg
   image_circular: false
   more_info: >
-    <p>AI4DH Lab</p>
-    <p>University of Oxford</p>
-    <p><a href="mailto:mingcheng.zhu@eng.ox.ac.uk">mingcheng.zhu@eng.ox.ac.uk</a></p>
+    <p>Me at Sagrada Familia</p>
 
 selected_papers: true
 social: true
@@ -29,4 +27,4 @@ I am a full-time DPhil student at the [AI4DH Lab, University of Oxford](https://
 
 Before Oxford, I worked as a Senior Research Assistant at the [Digital Medicine Lab, Duke-NUS Medical School](https://blog.nus.edu.sg/liunan/), supervised by [Prof. Nan Liu](https://www.duke-nus.edu.sg/directory/detail/liu-nan), where I worked on clinical AI fairness and controllable representation learning. I received an MRes from Imperial College London in 2023 and a BEng from Sichuan University in 2022.
 
-My current interests include efficient large language models for healthcare, EHR event stream modelling, multimodal representation learning, algorithmic fairness, interpretability, and uncertainty estimation for high-stakes decision-making.
+My current interests include efficient large language models for healthcare, EHR event stream modelling, multimodal representation learning, embodied intelligence, algorithmic fairness, interpretability, and uncertainty estimation for high-stakes decision-making.
