@@ -16,7 +16,10 @@ layout: default
 
   <article>
     {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
+      <div
+        class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}"
+        style="{% if page.profile.align == 'left' %}padding-right: 5px;{% else %}padding-left: 5px;{% endif %}"
+      >
         {% if page.profile.image %}
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
@@ -31,7 +34,7 @@ layout: default
           %}
         {% endif %}
         {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+          <div class="more-info" style="text-align: center;">{{ page.profile.more_info }}</div>
         {% endif %}
       </div>
     {% endif %}
@@ -59,7 +62,11 @@ layout: default
 
     {% if page.social %}
       <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
+        <div class="contact-icons">
+          <a href="mailto:{{ site.data.socials.email }}" title="email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://github.com/{{ site.data.socials.github_username }}" title="GitHub" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}" title="LinkedIn" rel="external nofollow noopener" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
